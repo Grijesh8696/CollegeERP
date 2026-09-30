@@ -24,7 +24,7 @@ import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-function AboutPage() {
+function AboutContent() {
   const searchParams = useSearchParams();
 
 const [activeTab, setActiveTab] = useState("trust");
