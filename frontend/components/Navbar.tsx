@@ -138,7 +138,7 @@ export default function Navbar() {
             width={80}
             height={25}
             className="object-contain"
-            priority
+            {/* priority */}
           />
         </div>
 
