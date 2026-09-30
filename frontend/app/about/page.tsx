@@ -20,11 +20,11 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-export default function AboutPage() {
+function AboutPage() {
   const searchParams = useSearchParams();
 
 const [activeTab, setActiveTab] = useState("trust");
@@ -477,5 +477,13 @@ She was awarded with best teacher award. She has visited different countries suc
 
       </div>
     </>
+  );
+}
+
+export default function AboutPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AboutContent />
+    </Suspense>
   );
 }
