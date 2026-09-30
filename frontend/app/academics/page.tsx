@@ -71,6 +71,8 @@ function AcademicsContent() {
 </div>
 
     </div>
+    );
+}
 export default function AcademicsPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
