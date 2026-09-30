@@ -290,7 +290,7 @@ export default function DepartmentPage({ department }: Props) {
 
       {/* Faculty Photo */}
       <div className="flex justify-center mb-4">
-
+        {f.image && (
         <img
           src={f.image}
           alt={f.name}
@@ -303,6 +303,7 @@ export default function DepartmentPage({ department }: Props) {
             border-red-200
           "
         />
+        )}
 
       </div>
 
