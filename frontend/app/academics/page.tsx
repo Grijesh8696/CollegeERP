@@ -1,8 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function AcademicsPage() {
+function AcademicsContent() {
   const searchParams = useSearchParams();
   const tab = searchParams.get("tab");
 
@@ -70,5 +71,10 @@ export default function AcademicsPage() {
 </div>
 
     </div>
+export default function AcademicsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AcademicsContent />
+    </Suspense>
   );
 }
