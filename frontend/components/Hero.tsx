@@ -107,7 +107,8 @@ export default function Hero() {
           {/* fill
           className="object-cover" */}
         /> */}
-        <img
+        
+        <Image
           src="/campus.jpg"
           alt="Campus"
           style={{
