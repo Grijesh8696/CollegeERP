@@ -100,14 +100,23 @@ export default function Hero() {
     <>
       <section className="relative h-[50vh]">
 
-        <Image
+        {/* <Image
           src="/campus.jpg"
           alt="Campus"
           className="absolute inset-0 w-full h-full object-cover"
           {/* fill
           className="object-cover" */}
+        /> */}
+        <img
+          src="/campus.jpg"
+          alt="Campus"
+          style={{
+            width: "100%",
+            height: "400px",
+            objectFit: "cover",
+            display: "block",
+          }}
         />
-
         <div className="absolute inset-0 bg-black/20" />
 
         <div className="absolute inset-0 flex items-center justify-center">
