@@ -186,6 +186,18 @@
 
 //       </div>
 
+
+
+export default function LaboratoriesPage() {
+  return (
+    <main className="min-h-screen p-8">
+      <h1 className="text-3xl font-bold">Laboratories</h1>
+      <p className="mt-4">
+        Laboratory information will be available here.
+      </p>
+    </main>
+  );
+}
 //     </div>
 
 //   );
