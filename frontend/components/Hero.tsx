@@ -91,7 +91,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Hero() {
   const [showForm, setShowForm] = useState(false);
@@ -103,8 +103,9 @@ export default function Hero() {
         <Image
           src="/campus.jpg"
           alt="Campus"
-          fill
-          className="object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
+          {/* fill
+          className="object-cover" */}
         />
 
         <div className="absolute inset-0 bg-black/20" />
