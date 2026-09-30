@@ -147,6 +147,39 @@ import Events from "@/components/Events";
 import Gallery from "@/components/Gallery";
 
 export default function Home() {
+  return (
+    <div style={{ padding: "40px" }}>
+      <h1>IMAGE TEST</h1>
+
+      <img
+        src="/campus.jpg"
+        alt="Campus Test"
+        style={{
+          width: "500px",
+          height: "300px",
+          objectFit: "cover",
+          display: "block",
+          border: "5px solid red",
+        }}
+      />
+
+      <img
+        src="/logo1.png"
+        alt="Logo Test"
+        style={{
+          width: "300px",
+          height: "100px",
+          objectFit: "contain",
+          display: "block",
+          marginTop: "20px",
+          border: "5px solid blue",
+        }}
+      />
+    </div>
+  );
+}
+
+export default function Home() {
 return (
 <> <Hero />
 
